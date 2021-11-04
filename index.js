@@ -30,7 +30,7 @@ app.post("/add-student", async(request, response) => {
     response.send(result);
 })
 
-app.get("/get-students", async(request, request) => {
+app.get("/get-students", async(request, response) => {
     const client = await createDBConnection();
     const result = await client
     .db("student-mentor")
